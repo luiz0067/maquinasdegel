@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* abbey road
+
+pagina de estilos. O BAR
+
+ */
+
+
+
+#content{
+	width:1000px; height:auto; min-heigth:800px; float:none; margin-left:auto; margin-right:auto; display:block; overflow:hidden;}

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Main Navigation */
+div#navmenu2 {
+    width:734px;
+	height:69px;
+    font-family:Arial, Helvetica, sans-serif; 
+	float:left;
+	clear:both;
+}
+ 
+ul#navigation {
+	width:734px;
+	height:69px;
+    float:left;
+	 text-align:center;
+}
+
+ul#navigation:hover {
+	width:734px;
+	height:69px;
+    float:left;
+	text-align:center;
+	 
+}
+
+
+
+ 
+ul#navigation li {
+    display:inline; width:145px;
+    font-size:18px;
+    margin-top:0;
+    padding:0;
+    float:left;
+	height:69px;
+}
+
+
+
+
+
+ 
+ul#navigation li a {
+    color:#006bb0;
+    text-decoration:none;
+    display:inline-block;
+	background-color:transparent; margin-top:0px;
+}
+ 
+ul#navigation li a:hover {
+   background-color:#0CF; color:#FFFFFF; 
+}
+ 
+ul#navigation li a.first {
+    border-left: 0 none;
+}
+ 
+ul#navigation li a.last {
+    border-right: 0 none;
+}
+ 
+ul#navigation li:hover > a {
+    background:transparent;
+}
+
+
+
+
+
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+/*these 2 styles are very important,
+being the ones which make the drop-down to appear on hover */
+    visibility:visible;
+    opacity:1;
+	float:none; margin-left:auto; margin-right:auto;
+}
+ 
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+/*the next 2 styles are very important,
+being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:transparent;
+    box-shadow:1px 1px 3px #ccc;
+/* css3 transitions for smooth hover effect */
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;    
+}
+ 
+ul#navigation ul {
+    top: 220px;
+    left: 52%; background-color:#4fa8ca; color:#09F;
+}
+ 
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px; /* strong related to width:180px; from above */
+}
+ 
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none; line-height:69px;
+}
+ 
+ul#navigation ul li a {
+    background:none;
+    padding:7px 15px;
+    color:#006bb0;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+}
+
+ul#navigation ul li a:hover {
+    background-color:none;
+    padding:7px 15px;
+    color:#FFFFFF;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    width:150px;
+}
+
+
